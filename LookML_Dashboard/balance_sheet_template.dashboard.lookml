@@ -125,7 +125,7 @@
   - name: Company Code
     title: Company Code
     type: field_filter
-    default_value: "%CENTRAL%"
+    default_value: ""
     allow_multiple_values: false
     required: false
     ui_config:

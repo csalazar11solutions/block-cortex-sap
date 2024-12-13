@@ -459,7 +459,7 @@
   - name: Year
     title: Year
     type: field_filter
-    # Se actualiza la fecha feault.
+    # Se actualiza el rango de fechas.
     default_value: 2024/01/01 to 2024/12/31
     allow_multiple_values: true
     required: false
