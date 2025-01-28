@@ -217,6 +217,111 @@ view: data_intelligence_ar {
     sql: ${TABLE}.FiscalYear_GJAHR ;;
   }
 
+  dimension: Customer_Number {
+    label: "Customer Number"
+    type: string
+    hidden: no
+    sql: ${TABLE}.CustomerNumber ;;
+  }
+
+  dimension: Customer_Name_1 {
+    label: "Customer Name 1"
+    type: string
+    hidden: no
+    sql: ${TABLE}.CustomerName1 ;;
+  }
+
+  dimension: Customer_Name_2 {
+    label: "Customer Name 2"
+    type: string
+    hidden: no
+    sql: ${TABLE}.CustomerName2 ;;
+  }
+
+  dimension: Customer_Name_3 {
+    label: "Customer Name 3"
+    type: string
+    hidden: no
+    sql: ${TABLE}.CustomerName3 ;;
+  }
+
+  dimension: Customer_Name_4 {
+    label: "Customer Name 4"
+    type: string
+    hidden: no
+    sql: ${TABLE}.CustomerName4 ;;
+  }
+
+  dimension: Sales_Director {
+    label: "Sales Director"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Director` ;;
+  }
+
+  dimension: Sales_Director_Name {
+    label: "Sales Director Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Director Name` ;;
+  }
+
+  dimension: Sales_Subdirector {
+    label: "Sales Subdirector"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Subdirector` ;;
+  }
+
+  dimension: Sales_Subdirector_Name {
+    label: "Sales Subdirector Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Subdirector Name` ;;
+  }
+
+  dimension: Sales_Regional_Manager {
+    label: "Sales Regional Manager"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Regional Manager` ;;
+  }
+
+  dimension: Sales_Regional_Manager_Name {
+    label: "Sales Regional Manager Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Regional Manager Name` ;;
+  }
+
+  dimension: Sales_Manager {
+    label: "Sales Manager"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Manager` ;;
+  }
+
+  dimension: Sales_Manager_Name {
+    label: "Sales Manager Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.`Sales Manager Name` ;;
+  }
+
+  dimension: Zone {
+    label: "Zone"
+    type: string
+    hidden: no
+    sql: ${TABLE}.Zone ;;
+  }
+
+  dimension: ZoneName {
+    label: "Zone Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.ZoneName ;;
+  }
+
   dimension: Invoice_to_which_the_Transaction_belongs {
     type: string
     sql: ${TABLE}.InvoiceToWhichTheTransactionBelongs_REBZG ;;
