@@ -59,6 +59,49 @@ view: customers_md {
     hidden: no
   }
 
+  dimension: Sales_Regional_Manager {
+    type: string
+    sql: ${TABLE}.`Sales Regional Manager` ;;
+    hidden: no
+  }
+
+  dimension: Sales_Regional_Manager_Name {
+    type: string
+    sql: ${TABLE}.`Sales Regional Manager Name` ;;
+    hidden: no
+  }
+
+  dimension: Sales_Manager {
+    type: string
+    sql: ${TABLE}.`Sales Manager` ;;
+    hidden: no
+  }
+
+  dimension: Sales_Manager_Name {
+    type: string
+    sql: ${TABLE}.`Sales Regional Manager Name` ;;
+    hidden: no
+  }
+
+  dimension: Zone {
+    type: string
+    sql: ${TABLE}.Zone ;;
+    hidden: no
+  }
+
+  dimension: Zone_Name {
+    type: string
+    sql: ${TABLE}.ZoneName ;;
+    hidden: no
+  }
+
+  dimension: Customer_Group_Name {
+    type: string
+    sql: ${TABLE}.`Customer Group Name` ;;
+    hidden: no
+  }
+
+
   dimension: key {
     type: string
     primary_key: yes
@@ -794,7 +837,6 @@ view: customers_md {
   dimension: name1_name1 {
     type: string
     sql: ${TABLE}.Name1_NAME1 ;;
-    hidden: no
   }
 
   dimension: name1_pson1 {
@@ -805,7 +847,6 @@ view: customers_md {
   dimension: name2_name2 {
     type: string
     sql: ${TABLE}.Name2_NAME2 ;;
-    hidden: no
   }
 
   dimension: name2_pson2 {
@@ -816,7 +857,6 @@ view: customers_md {
   dimension: name3_name3 {
     type: string
     sql: ${TABLE}.Name3_NAME3 ;;
-    hidden: no
   }
 
   dimension: name3_pson3 {
