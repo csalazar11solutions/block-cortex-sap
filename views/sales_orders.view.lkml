@@ -440,6 +440,24 @@ view: sales_orders {
     hidden: no
   }
 
+  dimension: Unit_of_measure_LB {
+    type: number
+    sql: ${TABLE}.UnitOfMeasure_LB ;;
+    hidden: no
+  }
+
+  dimension: Unit_of_measure_TON {
+    type: number
+    sql: ${TABLE}.UnitOfMeasure_TON ;;
+    hidden: no
+  }
+
+  dimension: Unit_of_measure_KG {
+    type: number
+    sql: ${TABLE}.UnitOfMeasure_KG ;;
+    hidden: no
+  }
+
   dimension: cumulative_confirmed_quantity_kbmeng {
     type: number
     sql: ${TABLE}.CumulativeConfirmedQuantity_KBMENG ;;
