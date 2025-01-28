@@ -37,25 +37,25 @@ view: customers_md {
 
   dimension: Sales_Director {
     type: string
-    sql: ${TABLE}.Sales Director ;;
+    sql: ${TABLE}.`Sales Director` ;;
     hidden: no
   }
 
   dimension: Sales_Director_Name {
     type: string
-    sql: ${TABLE}.Sales Director Name ;;
+    sql: ${TABLE}.`Sales Director Name` ;;
     hidden: no
   }
 
   dimension: Sales_Subdirector {
     type: string
-    sql: ${TABLE}.Sales Subdirector ;;
+    sql: ${TABLE}.`Sales Subdirector` ;;
     hidden: no
   }
 
   dimension: Sales_Subdirector_Name {
     type: string
-    sql: ${TABLE}.Sales Subdirector Name ;;
+    sql: ${TABLE}.`Sales Subdirector Name` ;;
     hidden: no
   }
 
