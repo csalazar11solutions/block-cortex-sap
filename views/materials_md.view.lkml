@@ -4,27 +4,51 @@ view: materials_md {
   
   fields_hidden_by_default: yes
 
-  dimension: nombre1_jerarquia {
+  dimension: Statistical_Group_1 {
     type: string
-    sql: ${TABLE}.product_hierarchy_name1 ;;
+    sql: ${TABLE}.`Statistical Group 1` ;;
     hidden: no
   }
 
-  dimension: nombre2_jerarquia {
+  dimension: Statistical_Group_2 {
     type: string
-    sql: ${TABLE}.product_hierarchy_name2 ;;
+    sql: ${TABLE}.`Statistical Group 2` ;;
     hidden: no
   }
 
-  dimension: nombre3_jerarquia {
+  dimension: Statistical_Group_3 {
     type: string
-    sql: ${TABLE}.product_hierarchy_name3 ;;
+    sql: ${TABLE}.`Statistical Group 3` ;;
     hidden: no
   }
 
-  dimension: nombre4_jerarquia {
+  dimension: Statistical_Group_4 {
     type: string
-    sql: ${TABLE}.product_hierarchy_name4 ;;
+    sql: ${TABLE}.`Statistical Group 4` ;;
+    hidden: no
+  }
+
+  dimension: Statistical_Group_Name_1 {
+    type: string
+    sql: ${TABLE}.`Statistical Group Name 1` ;;
+    hidden: no
+  }
+
+  dimension: Statistical_Group_Name_2 {
+    type: string
+    sql: ${TABLE}.`Statistical Group Name 2` ;;
+    hidden: no
+  }
+
+  dimension: Statistical_Group_Name_3 {
+    type: string
+    sql: ${TABLE}.`Statistical Group Name 3` ;;
+    hidden: no
+  }
+
+  dimension: Statistical_Group_Name_4 {
+    type: string
+    sql: ${TABLE}.`Statistical Group Name 4` ;;
     hidden: no
   }
 
