@@ -11,27 +11,51 @@ view: customers_md {
   
   fields_hidden_by_default: yes
 
-  dimension: nombre1_jerarquia {
+  dimension: Customer_Name_1 {
     type: string
     sql: ${TABLE}.CustomerName1 ;;
     hidden: no
   }
 
-  dimension: nombre2_jerarquia {
+  dimension: Customer_Name_2 {
     type: string
     sql: ${TABLE}.CustomerName2 ;;
     hidden: no
   }
 
-  dimension: nombre3_jerarquia {
+  dimension: Customer_Name_3 {
     type: string
     sql: ${TABLE}.CustomerName3 ;;
     hidden: no
   }
 
-  dimension: nombre4_jerarquia {
+  dimension: Customer_Name_4 {
     type: string
     sql: ${TABLE}.CustomerName4 ;;
+    hidden: no
+  }
+
+  dimension: Sales_Director {
+    type: string
+    sql: ${TABLE}.Sales Director ;;
+    hidden: no
+  }
+
+  dimension: Sales_Director_Name {
+    type: string
+    sql: ${TABLE}.Sales Director Name ;;
+    hidden: no
+  }
+
+  dimension: Sales_Subdirector {
+    type: string
+    sql: ${TABLE}.Sales Subdirector ;;
+    hidden: no
+  }
+
+  dimension: Sales_Subdirector_Name {
+    type: string
+    sql: ${TABLE}.Sales Subdirector Name ;;
     hidden: no
   }
 
