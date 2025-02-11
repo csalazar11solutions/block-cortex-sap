@@ -217,6 +217,50 @@ view: data_intelligence_ar {
     sql: ${TABLE}.SoldToPartyHeader_KUNNR ;;
   }
 
+  dimension: sold_to_party_header_name_kunnr {
+    label: "Sold To Party Header Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.SoldToPartyHeaderName_KUNNR ;;
+  }
+
+  dimension: ship_to_party_header_kunnr {
+    label: "Ship To Party Header"
+    type: string
+    hidden: no
+    sql: ${TABLE}.ShipToPartyHeader_KUNNR ;;
+  }
+
+  dimension: ship_to_party_header_name_kunnr {
+    label: "Ship To Party Header Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.ShipToPartyHeaderName_KUNNR ;;
+  }
+
+  dimension: bill_to_party_header_kunnr {
+    label: "Bill To Party Header"
+    type: string
+    hidden: no
+    sql: ${TABLE}.BillToPartyHeader_KUNNR ;;
+  }
+
+  dimension: bill_to_party_header_name_kunnr {
+    label: "Bill To Party Header Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.BillToPartyHeaderName_KUNNR ;;
+  }
+
+  dimension: payer_header_name_kunnr {
+    label: "Payer Header Name"
+    type: string
+    hidden: no
+    sql: ${TABLE}.PayerHeaderName_KUNNR ;;
+  }
+
+
+
   dimension: fiscal_year_gjahr {
     label: "Fiscal Year"
     type: string
@@ -257,6 +301,13 @@ view: data_intelligence_ar {
     type: string
     hidden: no
     sql: ${TABLE}.CustomerName4 ;;
+  }
+
+  dimension: status_of_legal_proceedings {
+    label: "Status Of Legal Proceedings"
+    type: string
+    hidden: no
+    sql: ${TABLE}.StatusOfLegalProceedings ;;
   }
 
   dimension: Sales_Director {
