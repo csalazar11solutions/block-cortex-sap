@@ -624,6 +624,7 @@ view: sales_orders {
     type: string
     sql: ${TABLE}.DistributionChannel_VTWEG ;;
     ##primary_key: yes
+    hidden: no
   }
 
   dimension: division_hdr_spart {
@@ -1478,6 +1479,7 @@ view: sales_orders {
     type: string
     sql: ${TABLE}.SalesOrganization_VKORG ;;
     #primary_key: yes
+    hidden: no
   }
 
   dimension: sales_probability_awahr {
