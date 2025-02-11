@@ -210,6 +210,13 @@ view: data_intelligence_ar {
     sql: ${TABLE}.ExchangeRateType_KURST ;;
   }
 
+  dimension: sold_to_party_header_kunnr {
+    label: "Sold To Party Header"
+    type: string
+    hidden: no
+    sql: ${TABLE}.SoldToPartyHeader_KUNNR ;;
+  }
+
   dimension: fiscal_year_gjahr {
     label: "Fiscal Year"
     type: string
