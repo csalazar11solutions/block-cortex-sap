@@ -104,8 +104,9 @@
   - name: Hierarchy
     title: Hierarchy
     type: field_filter
+    default_value: FPA1
     allow_multiple_values: false
-    required: false
+    required: true
     ui_config:
       type: dropdown_menu
       display: inline
@@ -180,7 +181,7 @@
   - name: Company Code
     title: Company Code
     type: field_filter
-    default_value: "%CENTRAL%"
+    #default_value: "%CENTRAL%"
     allow_multiple_values: true
     required: false
     ui_config:
@@ -193,7 +194,7 @@
   - name: Ledger Name
     title: Ledger Name
     type: field_filter
-    default_value: '%0L%'
+    #default_value: '%0L%'
     allow_multiple_values: true
     required: false
     ui_config:
@@ -206,7 +207,7 @@
   - name: Top Hierarchy Level
     title: Top Hierarchy Level
     type: field_filter
-    default_value: '2'
+    #default_value: '2'
     allow_multiple_values: true
     required: false
     ui_config:
