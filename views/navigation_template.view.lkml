@@ -253,58 +253,8 @@ view: navigation_template {
 
 
       <!-- begin HTML -edit styles as needed -->
-      <center>
-      <div style="{{ divStyle }}">
-      <span style="{{ spanStyle }}">
-      <img style="{{ imgStyle }}" src="{{ imgSrc }}"/>
-
-      <!-- Loop through navigation items as defined in dashBindings dimension-->
-      {% for navItem in navItems %}
-        {% assign navParts = navItem | split: value_delimiter._value %}
-        {% assign dashName = navParts[1] %}
-        {% assign dashID = navParts[0] %}
-        {% assign dashIDcheckType = dashID | plus: 0 %}
-
-      <!-- check if id is numeric for UDD ids or string for LookML dashboards -->
-      <!-- if LookML Dashboard then append model name if not provided -->
-
-      <!-- if dashIDcheckType equals 0 then string else numeric-->
-      {% if dashIDcheckType == 0 %}
-        <!-- if dashID contains '::' then model_name is already provided-->
-        {% if dashID contains '::' %}
-          {% else %}
-          {% assign dashID = modelName | append: '::' | append: dashID %}
-        {% endif %}
-      {% endif %}
-
-
-      {% assign dashUrl = "/dashboards/" | append: dashID %}
-
-
-      <!-- build links -->
-      {% if navigation_focus_page._in_query and counter == focus %}
-          <span style="{{ currentPageLinkStyle }}">{{ dashName }}</span>
-      {% elsif _explore._dashboard_url == dashUrl %}
-          <span style="{{ currentPageLinkStyle }}">{{ dashName }}</span>
-      {% else %}
-          <a style="{{ linkStyle }}" href="{{ dashUrl }}?{{ queryString }}">{{ dashName }}</a>
-      {% endif %}
-
-      <!-- increment counter by 1 -->
-      {% assign counter = counter | plus: 1 %}
-      {% endfor %}
-
-      </span>
-      </div>
-
-      <!-- NOTE: There's a bug in _explore._dashboard_url liquid implementation -->
-      <!-- until fixed use paramter navigation_focus_page or advise users to clear cache & refresh-->
-      {% if navigation_focus_page._in_query == false %}
-      <div>
-      <span style="font-size: 10px;">{{ _explore._dashboard_url }} - clear cache & refresh to see active page</span>
-      </div>
-      {% endif %}
-      </center>
+      <!-- AQUI SE DEBE AGREGAR EL CODIGO CENTER -->
+      
 
       ;;
   }
