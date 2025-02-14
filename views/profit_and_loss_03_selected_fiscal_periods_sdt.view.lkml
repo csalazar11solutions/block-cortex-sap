@@ -263,7 +263,7 @@ view: profit_and_loss_03_selected_fiscal_periods_sdt {
     label: "{% assign compare = profit_and_loss.parameter_compare_to._parameter_value %}{% if profit_and_loss.filter_fiscal_timeframe._in_query and compare == 'none'%} {% else %}Reporting Amount{% endif %}"
     description: "Amount in Global Currency for the Reporting fiscal reporting group."
     sql_distinct_key: ${profit_and_loss.key} ;;
-    sql: ${profit_and_loss.amount_in_target_currency} ;;
+    sql: -1 * ${profit_and_loss.amount_in_target_currency} ;;
     filters: [fiscal_reporting_group: "Reporting"]
     value_format_name: decimal_0
     html: @{negative_format} ;;
