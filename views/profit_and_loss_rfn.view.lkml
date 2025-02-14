@@ -83,7 +83,7 @@ view: +profit_and_loss {
     allowed_value: {label: "Fiscal Period" value: "fp"}
     allowed_value: {label: "Quarter" value: "qtr"}
     allowed_value: {label: "Year" value: "yr"}
-    default_value: "qtr"
+    default_value: "fp"
   }
 
   # this filter is intended for use on a dashboard only and should be linked to parameter_display_time_dimension

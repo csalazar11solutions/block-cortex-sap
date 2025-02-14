@@ -104,9 +104,9 @@
   - name: Hierarchy
     title: Hierarchy
     type: field_filter
-    #default_value: FPA1
+    default_value: 1799
     allow_multiple_values: false
-    required: true
+    required: false
     ui_config:
       type: dropdown_menu
       display: inline
@@ -116,7 +116,7 @@
   - name: Display Timeframe
     title: Display Timeframe
     type: field_filter
-    default_value: qtr
+    default_value: fp
     allow_multiple_values: false
     required: false
     ui_config:
