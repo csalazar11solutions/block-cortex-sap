@@ -104,7 +104,7 @@
   - name: Hierarchy
     title: Hierarchy
     type: field_filter
-    default_value: FPA1
+    #default_value: FPA1
     allow_multiple_values: false
     required: true
     ui_config:
