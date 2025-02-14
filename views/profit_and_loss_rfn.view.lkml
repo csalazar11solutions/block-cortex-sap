@@ -97,16 +97,16 @@ view: +profit_and_loss {
     label: "Select Fiscal Timeframe"
     suggest_dimension: timeframes_list
   }
- #COMENTADO POR ELEVEN SOLUTIONS
-  #parameter: parameter_aggregate {
-    #type: unquoted
-    #view_label: "🔍 Filters & 🛠 Tools"
-    #label: "Combine Selected Timeframes?"
-    #description: "If multiple timeframes selected, should results be combined or shown for each time period selected?"
-    #allowed_value: {value: "Yes"}
-    #allowed_value: {value: "No"}
-    #default_value: "Yes"
-  #}
+
+  parameter: parameter_aggregate {
+    type: unquoted
+    view_label: "🔍 Filters & 🛠 Tools"
+    label: "Combine Selected Timeframes?"
+    description: "If multiple timeframes selected, should results be combined or shown for each time period selected?"
+    allowed_value: {value: "Yes"}
+    allowed_value: {value: "No"}
+    default_value: "Yes"
+  }
 
   parameter: parameter_compare_to {
     type: unquoted
