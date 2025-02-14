@@ -160,10 +160,7 @@ view: navigation_template {
   ###### Navbar definition
   ########################################
 
-  #AQUI AGREGAR CODIGO 11
-
-      ;;
-  }
+  #AQUI VA EL CODIGO ELEVEN
 
 
 }
