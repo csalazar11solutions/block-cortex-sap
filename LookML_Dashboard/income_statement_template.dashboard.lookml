@@ -130,7 +130,8 @@
     title: Select Fiscal Timeframe
     type: field_filter
     # if using demo data default is 2023.Q4 else find current calendar quarter
-    default_value: "{% if _user_attributes['sap_use_demo_data']=='Yes'%}{% assign qtr = '2023.Q4'%}{%else%}{% assign q = 'now' | date: '%m' | times: 1.0 | divided_by: 3 | ceil %}{% assign qtr = 'now' | date: '%Y' | append: '.Q' | append: q %}{%endif%}{{qtr}}"
+    #default_value: "{% if _user_attributes['sap_use_demo_data']=='Yes'%}{% assign qtr = '2023.Q4'%}{%else%}{% assign q = 'now' | date: '%m' | times: 1.0 | divided_by: 3 | ceil %}{% assign qtr = 'now' | date: '%Y' | append: '.Q' | append: q %}{%endif%}{{qtr}}"
+    default_value: "2024.010"
     allow_multiple_values: true
     required: false
     ui_config:
@@ -182,6 +183,7 @@
     title: Company Code
     type: field_filter
     #default_value: "%CENTRAL%"
+    default_value: "%Houston S&W and Warehouse%"
     allow_multiple_values: true
     required: false
     ui_config:
@@ -194,7 +196,7 @@
   - name: Ledger Name
     title: Ledger Name
     type: field_filter
-    #default_value: '%0L%'
+    default_value: '%0L%'
     allow_multiple_values: true
     required: false
     ui_config:
