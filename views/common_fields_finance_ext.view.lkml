@@ -56,7 +56,8 @@ view: common_fields_finance_ext {
   dimension: ledger_in_general_ledger_accounting {
     label: "Ledger"
     description: "Ledger in General Ledger Accounting as ID or Code"
-    sql: COALESCE(${TABLE}.LedgerInGeneralLedgerAccounting,'0L') ;;
+    sql: ${TABLE}.LedgerInGeneralLedgerAccounting ;;
+    #sql: COALESCE(${TABLE}.LedgerInGeneralLedgerAccounting,'0L') ;;
   }
 
   dimension: company_code {
